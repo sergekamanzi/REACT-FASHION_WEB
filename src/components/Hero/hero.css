@@ -1,0 +1,90 @@
+/* hero.css */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .left-header {
+    flex: 1;
+    max-width: 500px;
+    margin: 20px;
+  }
+  
+  .left-header h2 span{
+    background-color: rgb(77, 77, 223);
+    color: white;
+  }
+
+  .left-header h2 {
+    font-size: 76px;
+    margin-bottom: 20px;
+    color:#224F34;
+  }
+  
+  .left-header p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #267D49;
+  }
+  
+  .left-header button {
+    padding: 10px 20px;
+    background-color: #224F34;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 230px;
+    height: 59px;
+    margin-left: 0px;
+  }
+  
+  .left-header button:hover {
+    background-color: #333;
+  }
+  
+  .right-header {
+    flex: 1;
+    max-width: 360px;
+    margin: 20px;
+  }
+  
+  .right-header img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius:100px ;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .left-header, .right-header {
+      max-width: 100%;
+    }
+  
+    .left-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .left-header p {
+      font-size: 0.9rem;
+    }
+  
+    .left-header button {
+      width: 100%;
+      text-align: center;
+    }
+    .right-header img{
+        width: 250px;
+        height: 250px;
+    }
+  }
+  

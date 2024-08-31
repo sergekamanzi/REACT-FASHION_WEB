@@ -1,0 +1,86 @@
+/* footer.css */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #224F34;
+    height: 400px;
+  }
+  
+  .futa {
+    flex: 1 1 200px;
+    margin: 20px;
+    max-width: 300px;
+  }
+  
+ .futa h5 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color:#FFFFFF;
+  }
+  
+  .futa h2{
+    font-size: 1.7rem;
+    color: #FFFFFF;
+  }
+
+
+  .futa p {
+    margin-bottom: 8px;
+    color: #C2EFD4;
+  }
+  
+  .futa div {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .futa input {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: row;
+      align-items: center;
+      height: 750px;
+    }
+    
+    .icons{
+    cursor: pointer;
+    margin-left: 110px;
+    }
+
+    .futa {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .futa input {
+      max-width: 100%;
+    }
+  }
+  

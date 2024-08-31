@@ -1,0 +1,112 @@
+/* navbar.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    color: #fff;
+  }
+  
+  .logo h2 {
+    margin: 0;
+    color: #224F34;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .logo a{
+    text-decoration: none;
+  }
+  
+  .links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .links ul li a {
+    color: #224F34;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-size: 22px;
+    font-size: medium;
+  }
+
+  .links ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  .login {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+   
+  .login a {
+    text-decoration: none;
+  }
+  
+
+
+  .login button {
+    width: 142px;
+    height: 52px;
+    font-size: medium;
+    font-size: 20px;
+    color: #224F34;
+    background-color: transparent;
+    border: 1px solid ;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 40px;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #1f1d1d;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .links ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      gap: 10px;
+    }
+    
+    .nav {
+      justify-content: space-around;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .hamburger.active + .links ul {
+      display: flex;
+    }
+  }
+  
